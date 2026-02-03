@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Weather Forecast App{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="hero-title">
+                <i class="fas fa-cloud-sun"></i>
+                Weather Forecast & Rainfall Prediction
+            </h1>
+            <p class="hero-subtitle">
+                Get accurate weather forecasts and intelligent rainfall predictions for any city worldwide.
+                Plan your day with confidence using our advanced weather analytics.
+            </p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('register') }}" class="btn btn-primary">
+                    <i class="fas fa-user-plus"></i>
+                    Get Started
+                </a>
+                <a href="{{ url_for('login') }}" class="btn btn-secondary">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Login
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="weather-card-demo">
+                <div class="weather-icon">
+                    <i class="fas fa-cloud-rain"></i>
+                </div>
+                <div class="weather-info">
+                    <h3>Live Weather Data</h3>
+                    <p>Real-time updates</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Why Choose WeatherPro?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Accurate Predictions</h3>
+                <p>Advanced algorithms analyze weather patterns to provide highly accurate rainfall predictions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Real-time Updates</h3>
+                <p>Get instant weather updates and forecasts that refresh automatically throughout the day.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Friendly</h3>
+                <p>Access your weather dashboard from any device with our responsive design.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <h3>Global Coverage</h3>
+                <p>Weather data and forecasts for cities worldwide at your fingertips.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Start Forecasting?</h2>
+            <p>Join thousands of users who trust WeatherPro for their daily weather planning.</p>
+            <a href="{{ url_for('register') }}" class="btn btn-accent">
+                <i class="fas fa-rocket"></i>
+                Create Free Account
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
