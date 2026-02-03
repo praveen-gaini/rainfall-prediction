@@ -1,0 +1,5 @@
+flask
+pandas
+numpay
+matplotlib
+scikit-learn
